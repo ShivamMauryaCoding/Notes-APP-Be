@@ -23,7 +23,7 @@ app.use(cookieParser());
 app.use("/api/user", userRouter);
 app.use("/api/note", noteRouter);
 
-app.listen(https://notes-app-be-5oau.onrender.com, async () => {
+app.listen(8080, async () => {
   try {
     await ConnectDB();
     console.log("Server is running on http://localhost:8080");
