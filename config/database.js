@@ -2,7 +2,10 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 const dbConnect = () => {
   mongoose
-    .connect(process.env.DATABASE_URL)
+    .connect("mongodb+srv://shivammauryavines:ctB7tqfUWsFD9NUz@cluster0.ydkwetv.mongodb.net/removieApp?retryWrites=true&w=majority&appName=Cluster0",{
+        useNewUrlParser: true,
+  useUnifiedTopology: true,
+    })
     .then(() => {
       console.log("connection successfully");
     })
